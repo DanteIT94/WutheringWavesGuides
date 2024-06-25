@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct WWGuidesApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ZStack {
+                Color.black
+                    .ignoresSafeArea(.all)
+                ContentView()
+            }
         }
     }
 }
