@@ -18,12 +18,12 @@ class CharacterViewModel: ObservableObject {
 
         firestoreManager.fetchCharacters { [weak self] characters, error in
             if let error = error {
-                print("Ошибка получения персонажей: \(error)")
+                print("Ошибка получения персонажей: \(error.localizedDescription)")
             } else {
                 print("Characters fetched: \(characters?.count ?? 0)")
                 self?.characters = characters ?? []
             }
-            
         }
     }
 }
+
