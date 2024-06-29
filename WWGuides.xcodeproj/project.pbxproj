@@ -11,8 +11,6 @@
 		9242A4022C2A558500025B66 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9242A4012C2A558500025B66 /* ContentView.swift */; };
 		9242A4042C2A558700025B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9242A4032C2A558700025B66 /* Assets.xcassets */; };
 		9242A4072C2A558700025B66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9242A4062C2A558700025B66 /* Preview Assets.xcassets */; };
-		9242A4122C2A8FE500025B66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9242A4112C2A8FE500025B66 /* GoogleService-Info.plist */; };
-		9242A4142C2A919300025B66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9242A4132C2A919300025B66 /* AppDelegate.swift */; };
 		9242A4172C2A927F00025B66 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9242A4162C2A927F00025B66 /* FirebaseAnalytics */; };
 		9242A4192C2A927F00025B66 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 9242A4182C2A927F00025B66 /* FirebaseAnalyticsOnDeviceConversion */; };
 		9242A41B2C2A927F00025B66 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9242A41A2C2A927F00025B66 /* FirebaseAnalyticsSwift */; };
@@ -41,6 +39,10 @@
 		9242A4492C2A927F00025B66 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9242A4482C2A927F00025B66 /* FirebaseStorage */; };
 		9242A44B2C2A927F00025B66 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9242A44A2C2A927F00025B66 /* FirebaseStorageCombine-Community */; };
 		9242A44D2C2A927F00025B66 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = 9242A44C2C2A927F00025B66 /* FirebaseVertexAI-Preview */; };
+		9242A4502C2ABDA500025B66 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9242A44F2C2ABDA500025B66 /* FirebaseManager.swift */; };
+		9242A4542C2ACAB600025B66 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9242A4532C2ACAB600025B66 /* CharacterModel.swift */; };
+		9242A4562C2C2AAA00025B66 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9242A4552C2C2AAA00025B66 /* CharacterViewModel.swift */; };
+		9242A4582C2D924000025B66 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9242A4572C2D924000025B66 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,8 +51,10 @@
 		9242A4012C2A558500025B66 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9242A4032C2A558700025B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9242A4062C2A558700025B66 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9242A4112C2A8FE500025B66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9242A4132C2A919300025B66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9242A44F2C2ABDA500025B66 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		9242A4532C2ACAB600025B66 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		9242A4552C2C2AAA00025B66 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		9242A4572C2D924000025B66 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,6 @@
 		9242A3F32C2A558500025B66 = {
 			isa = PBXGroup;
 			children = (
-				9242A4112C2A8FE500025B66 /* GoogleService-Info.plist */,
 				9242A3FE2C2A558500025B66 /* WWGuides */,
 				9242A3FD2C2A558500025B66 /* Products */,
 				9242A4152C2A926600025B66 /* Frameworks */,
@@ -113,11 +116,12 @@
 		9242A3FE2C2A558500025B66 /* WWGuides */ = {
 			isa = PBXGroup;
 			children = (
+				9242A44E2C2ABD8000025B66 /* Firebase */,
 				9242A3FF2C2A558500025B66 /* WWGuidesApp.swift */,
 				9242A4012C2A558500025B66 /* ContentView.swift */,
 				9242A4032C2A558700025B66 /* Assets.xcassets */,
+				9242A4572C2D924000025B66 /* GoogleService-Info.plist */,
 				9242A4052C2A558700025B66 /* Preview Content */,
-				9242A4132C2A919300025B66 /* AppDelegate.swift */,
 			);
 			path = WWGuides;
 			sourceTree = "<group>";
@@ -135,6 +139,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9242A44E2C2ABD8000025B66 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				9242A44F2C2ABDA500025B66 /* FirebaseManager.swift */,
+				9242A4532C2ACAB600025B66 /* CharacterModel.swift */,
+				9242A4552C2C2AAA00025B66 /* CharacterViewModel.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +243,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9242A4072C2A558700025B66 /* Preview Assets.xcassets in Resources */,
+				9242A4582C2D924000025B66 /* GoogleService-Info.plist in Resources */,
 				9242A4042C2A558700025B66 /* Assets.xcassets in Resources */,
-				9242A4122C2A8FE500025B66 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,8 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9242A4142C2A919300025B66 /* AppDelegate.swift in Sources */,
+				9242A4502C2ABDA500025B66 /* FirebaseManager.swift in Sources */,
+				9242A4542C2ACAB600025B66 /* CharacterModel.swift in Sources */,
 				9242A4022C2A558500025B66 /* ContentView.swift in Sources */,
+				9242A4562C2C2AAA00025B66 /* CharacterViewModel.swift in Sources */,
 				9242A4002C2A558500025B66 /* WWGuidesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
